@@ -23,17 +23,17 @@ allprojects{
 apply plugin: 'com.android.application'
 
 dependencies {
-//    compile fileTree(include: '*.jar', dir: 'libs')
-    implementation fileTree(include: '*.jar', dir: 'libs')
-//    compile 'com.android.support:support-v4:21.0.0'
-    implementation 'com.android.support:support-v4:21.0.0'
+    compile fileTree(include: '*.jar', dir: 'libs')
+//    implementation fileTree(include: '*.jar', dir: 'libs')
+    compile 'com.android.support:support-v4:21.0.0'
+//    implementation 'com.android.support:support-v4:21.0.0'
 }
 
 android {
 //    compileSdkVersion 25
     compileSdkVersion 21
-    buildToolsVersion "28.0.2"
-//    buildToolsVersion "21.1.1"
+//    buildToolsVersion "28.0.2"
+    buildToolsVersion '28.0.2'
 
     sourceSets {
         main {

@@ -440,7 +440,7 @@ public class FolderFragment extends Fragment implements OnItemClickListener, OnS
 				refreshFolder();
 				return true;
 
-			case R.id.menu_app_info:
+			case R.id.useful_web:
 				startActivity(new Intent(getActivity().getApplicationContext(), Samble1Activity.class));
 				return true;
 

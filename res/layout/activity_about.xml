@@ -77,10 +77,10 @@
         android:text="@string/other_apps" />
 
     <Button
-        android:id="@+id/totest1"
+        android:id="@+id/btnUseWeb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableLeft="@android:drawable/ic_input_add"
-        android:text="to test1" />
+        android:text="@string/useful_web" />
 
 </LinearLayout>

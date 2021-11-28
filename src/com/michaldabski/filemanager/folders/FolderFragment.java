@@ -60,6 +60,7 @@ import android.widget.Toast;
 import com.michaldabski.filemanager.AppPreferences;
 import com.michaldabski.filemanager.FileManagerApplication;
 import com.michaldabski.filemanager.R;
+import com.michaldabski.filemanager.Samble1Activity;
 import com.michaldabski.filemanager.clipboard.Clipboard;
 import com.michaldabski.filemanager.clipboard.Clipboard.FileAction;
 import com.michaldabski.filemanager.clipboard.FileOperationListener;
@@ -438,6 +439,11 @@ public class FolderFragment extends Fragment implements OnItemClickListener, OnS
 			case R.id.menu_refresh:
 				refreshFolder();
 				return true;
+
+			case R.id.menu_app_info:
+				startActivity(new Intent(getActivity().getApplicationContext(), Samble1Activity.class));
+				return true;
+
 		}
 		return super.onOptionsItemSelected(item);
 	}

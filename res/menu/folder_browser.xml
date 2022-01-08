@@ -18,7 +18,8 @@
   IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
   CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item
         android:id="@+id/menu_unfavourite"
@@ -74,5 +75,12 @@
         android:showAsAction="ifRoom"
         android:title="@string/create_folder"
         android:visible="true"/>
+    <item
+        android:id="@+id/useful_web"
+        android:icon="@drawable/ic_about"
+        android:orderInCategory="6"
+        android:title="@string/useful_web"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
 
 </menu>

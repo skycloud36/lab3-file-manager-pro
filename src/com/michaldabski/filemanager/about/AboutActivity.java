@@ -65,6 +65,7 @@ public class AboutActivity extends Activity implements OnClickListener
 		
 		findViewById(R.id.btnFeedback).setOnClickListener(this);
 		findViewById(R.id.btnPlaystore).setOnClickListener(this);
+		findViewById(R.id.totest1).setOnClickListener(this);
 	}
 	
 	/**
@@ -127,7 +128,17 @@ public class AboutActivity extends Activity implements OnClickListener
 					e.printStackTrace();
 				}
 				break;
-			
+			case R.id.totest1:
+				try
+				{
+					Intent intent = new Intent(this, com.michaldabski.filemanager.Samble1Activity.class);
+					startActivity(intent);
+				}
+				catch (Exception e)
+				{
+					e.printStackTrace();
+				}
+				break;
 		}
 	}
 	
